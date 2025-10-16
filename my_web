@@ -1,0 +1,20 @@
+server {
+   listen	80;
+
+   root /var/www/html;
+
+   server_name	my_web; 
+
+   access_log	/var/log/nginx/my_web-access.log;
+   error_log	/var/log/nginx/my_web-error.log;
+
+   location ~ \.jpg$ {
+        try_files $uri =404;
+   }
+   
+   location / {
+		proxy_pass	http://localhost:9000;
+
+   }
+
+}
