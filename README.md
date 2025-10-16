@@ -57,6 +57,6 @@
 
 #### Решение:
 
-[Конфиг HAproxy](haproxy_3.cfg)
+[Конфиг HAproxy](haproxy_4.cfg)
 
-![Проверка](zad_3.png)
+![Проверка](zad_4.png)
